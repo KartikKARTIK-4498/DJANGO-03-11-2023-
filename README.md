@@ -10,10 +10,10 @@ Welcome to our Tourism Website project! This Django-based website is designed to
 
 - [Project Overview](#project-overview)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Logo](#LOGO)
+- [Color Pallete](#color-pallete)
+- [Database Diagram](#Database-Diagram)
+
 
 ## Project Overview
 
