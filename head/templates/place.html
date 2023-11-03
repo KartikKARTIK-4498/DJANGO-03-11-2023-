@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    {% for place in places %}
+    <title>{{place.name}}</title>
+    {% endfor %}
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/fonts/ionicons.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'assets/css/Footer-Dark.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/Navbar---Apple-1.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/Navbar---Apple.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/Responsive-UI-Card.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple"
+      style="
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div class="container">
+        <button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#menu"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul
+            class="navbar-nav flex-grow-1 justify-content-between"
+            style="height: auto; display: flex; align-items: center"
+          >
+            <li class="nav-item d-none d-xs-block d-md-block">
+              <a class="nav-link" href="/" style="height: auto; width: auto"
+                ><img
+                  src="{% static 'assets/img/Logo%20Tourism.png' %}"
+                  style="width: 3em"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/all/">All Places</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recommended</a>
+            </li>
+            <li class="nav-item d-none d-xs-block d-md-block">
+              <a class="nav-link" href="/home#section1"
+                ><i class="icon ion-ios-search-strong"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% for place in places %}
+    <img
+      src="{{place.img.url}}"
+      style="
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        z-index: -1;
+      "
+    />
+    {% endfor %}
+    <div
+      style="
+        display: flex;
+        width: 100vw;
+        height: 50vh;
+        background-image: linear-gradient(to bottom, transparent, white);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+      "
+    >
+      {% for place in places %}
+      <h1 style="margin: 0px">{{place.name}}</h1>
+      {% endfor %}
+    </div>
+    <div
+      style="
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: 100vw;
+      "
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div style="width: 100%; align-items: flex-start; padding: 2em;">
+        <h1 style="width: auto; text-align: start;">Description</h1>
+        {% for place in places %}
+        <p style="width: 70%;">{{place.desc}}</p>
+        {% endfor %}
+
+        <br>
+        <br>
+
+        <h1 style="width: auto; text-align: start;">Image Gallery</h1>
+        <div class="gal" style="width: 95%; box-sizing: border-box; overflow: hidden;">
+          {% for place in places %}
+          <img src="{{place.img0.url}}" style="width: 20%; margin: 1em;">
+          <img src="{{place.img1.url}}" style="width: 20%; margin: 1em;">
+          <img src="{{place.img2.url}}" style="width: 20%; margin: 1em;">
+          {% endfor %}
+        </div>
+        
+        
+        
+        
+        
+        <h1 style="width: auto; text-align: start;">Nearby Places</h1>
+        <div class="container">
+          <div
+            class="row"
+            style="display: grid; grid-template-columns: 1fr 1fr 1fr; width: 100%"
+          >
+  
+  
+          {% for place in nearby %}
+          <div class="col-md-4" style="width: 100%; height: 100%; margin-top: 2em;">
+              <div class="blog-card blog-card-blog" style="height: 100%;">
+              <div class="blog-card-image">
+                  <a href="{{place.name}}">
+                  <img class="img" src="{{place.img.url}}" />
+                  </a>
+                  <div class="ripple-cont"></div>
+              </div>
+              <div class="blog-table">
+                  <h6 class="blog-category blog-text-success">{{place.category}}</h6>
+                  <h4 class="blog-card-caption">
+                  <a href="/nearby/{{place.nearby_id}}/">{{place.name}}</a>
+                  </h4>
+                  <p class="blog-card-description">{{place.desc}}</p>
+              </div>
+              </div>
+          </div>
+          {% endfor %}
+  
+  
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <h1>Recommended Places</h1>
+      <div class="container" style="width: 100%;">
+        <div
+          class="row"
+          style="display: grid; grid-template-columns: 1fr 1fr 1fr; width: 100%"
+        >
+
+
+        <div class="col-md-4" style="width: 100%; height: 100%;">
+            <div class="blog-card blog-card-blog" style="height: 100%;">
+            <div class="blog-card-image">
+                <a href="{{rand1.name_id}}">
+                <img class="img" src="{{rand1.img.url}}" />
+                </a>
+                <div class="ripple-cont"></div>
+            </div>
+            <div class="blog-table">
+                <h6 class="blog-category blog-text-success">Place</h6>
+                <h4 class="blog-card-caption">
+                <a href="/place/{{rand1.place_id}}">{{rand1.name}}</a>
+                </h4>
+                <p class="blog-card-description">{{rand1.desc}}</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="width: 100%; height: 100%;">
+            <div class="blog-card blog-card-blog" style="height: 100%;">
+            <div class="blog-card-image">
+                <a href="{{rand2.name_id}}">
+                <img class="img" src="{{rand2.img.url}}" />
+                </a>
+                <div class="ripple-cont"></div>
+            </div>
+            <div class="blog-table">
+                <h6 class="blog-category blog-text-success">Place</h6>
+                <h4 class="blog-card-caption">
+                <a href="/place/{{rand2.place_id}}">{{rand2.name}}</a>
+                </h4>
+                <p class="blog-card-description">{{rand2.desc}}</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="width: 100%; height: 100%;">
+            <div class="blog-card blog-card-blog" style="height: 100%;">
+            <div class="blog-card-image">
+                <a href="{{rand3.name_id}}">
+                <img class="img" src="{{rand3.img.url}}" />
+                </a>
+                <div class="ripple-cont"></div>
+            </div>
+            <div class="blog-table">
+                <h6 class="blog-category blog-text-success">Place</h6>
+                <h4 class="blog-card-caption">
+                <a href="/place/{{rand3.place_id}}">{{rand1.name}}</a>
+                </h4>
+                <p class="blog-card-description">{{rand3.desc}}</p>
+            </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    <footer class="footer-dark" style="width: 100%">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>KCK Tourism</h3>
+            <p style="color: #cdcdcd">
+              Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus
+              ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique
+              lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
+            </p>
+          </div>
+          <div
+            class="col item social"
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <a href="#"><i class="icon ion-social-facebook"></i></a
+            ><a href="#"><i class="icon ion-social-twitter"></i></a
+            ><a href="#"><i class="icon ion-social-snapchat"></i></a
+            ><a href="#"><i class="icon ion-social-instagram"></i></a>
+          </div>
+        </div>
+        <p class="copyright" style="color: rgb(255, 255, 255)">
+          KCK Tourism © 2023
+        </p>
+      </div>
+    </footer>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/Navbar---Apple.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Hello, world!</title>
+{% endblock title %}
+
+{% block body %}
+    <p>
+        {% for place in places %}
+        <p>
+            {{place.name}}
+        </p>
+        {% endfor %}
+    </p>
+{% endblock body %}
