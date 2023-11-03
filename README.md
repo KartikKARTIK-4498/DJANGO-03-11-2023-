@@ -41,5 +41,11 @@ Our Tourism Website aims to showcase various attractions, including museums, cul
 
 ![WhatsApp Image 2023-11-03 at 10 51 51](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/059720a0-c436-457d-b9d8-9f69ff1feef6)
 
+## WEBSITE SCREENSHOTS
+![Screenshot_2023-11-03_15-50-15](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/ee52e97c-fbb2-4518-b942-f8311af73cc4)
+![Screenshot_2023-11-03_15-49-58](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/48b72ace-bc97-4338-87e5-631cddcca459)
+![Screenshot_2023-11-03_15-49-40](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/02fb24b8-dc10-4188-9bf1-fdb1632a01fc)
+
+
 
 
