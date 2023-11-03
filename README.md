@@ -54,5 +54,6 @@ Our Tourism Website aims to showcase various attractions, including museums, cul
 
 ## DATABASE DESIGN
 
+
 ![WhatsApp Image 2023-11-03 at 16 55 45](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/52d8adec-8602-4dca-8c09-d6544b718a78)
 
