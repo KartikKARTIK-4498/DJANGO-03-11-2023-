@@ -31,3 +31,13 @@ Our Tourism Website aims to showcase various attractions, including museums, cul
 - Responsive Design: The website is designed to be accessible on various devices, from desktop to mobile.
 - Interactive Maps: View attraction locations on interactive maps.
 - Easy Data Management: The admin interface allows easy management of attraction data.
+
+## Logo
+
+![Logo Tourism](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/25efaee9-2731-4690-9520-e6bb7586df1f)
+
+## Color Pallete
+
+![WhatsApp Image 2023-11-03 at 10 51 51](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/5c3fbefb-b9c5-436d-9955-b8ee6461acdd)
+
+
