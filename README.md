@@ -1,3 +1,3 @@
 # DJANGO-03-11-2023-
-         ##KCK TOURISM ✈️     REGION📍INDIA
+##         KCK TOURISM ✈️     REGION📍INDIA
 
