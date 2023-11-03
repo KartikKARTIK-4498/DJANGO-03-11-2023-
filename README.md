@@ -34,10 +34,12 @@ Our Tourism Website aims to showcase various attractions, including museums, cul
 
 ## Logo
 
-![Logo Tourism](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/25efaee9-2731-4690-9520-e6bb7586df1f)
+![Logo Tourism](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/02004536-2b65-4840-8ddb-63c7748e38c0)
+
 
 ## Color Pallete
 
-![WhatsApp Image 2023-11-03 at 10 51 51](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/5c3fbefb-b9c5-436d-9955-b8ee6461acdd)
+![WhatsApp Image 2023-11-03 at 10 51 51](https://github.com/KartikKARTIK-4498/DJANGO-03-11-2023-/assets/57806365/059720a0-c436-457d-b9d8-9f69ff1feef6)
+
 
 
